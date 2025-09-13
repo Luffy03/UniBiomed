@@ -48,9 +48,6 @@ data/Biomed
     ├──test_mask
     ├──train.json
     ├──test.json
-├── 3D
-    ├── CHAOS
-    ├── ...
 ├── MedTrinity
 ├── MSD
 ├── ...
@@ -163,3 +160,4 @@ If you find this repo useful for your research, please consider citing the paper
   year={2025}
 }
 ```
+
