@@ -37,7 +37,7 @@ pretrained/
 
 ## Download Datasets
 
-Our curated datasets are available at [Hugging face](https://huggingface.co/Luffy503/UniBiomed). Some of the datasets should be downloaded and processed from the original links. The datasets are organized as follows:
+Our curated datasets are available at [Hugging face](https://huggingface.co/Luffy503/UniBiomed). **NOTE THAT** You need to download MedTrinity from https://huggingface.co/datasets/UCSC-VLAA/MedTrinity-25M. The datasets are organized as follows:
 ```
 ./ # project root
 data/Biomed
@@ -160,4 +160,5 @@ If you find this repo useful for your research, please consider citing the paper
   year={2025}
 }
 ```
+
 
