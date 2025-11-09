@@ -713,7 +713,7 @@ BioMSD_Task06_Lung_3D = dict(
     repeats=10,
     special_tokens=['[SEG]'],
     extra_image_processor=extra_image_processor,
-    sampled_slices=5,
+    sampled_slices=10,
 )
 BioMSD_Task09_Spleen_3D = dict(
     type=ReferSegBiomedDataset3D,
@@ -726,7 +726,7 @@ BioMSD_Task09_Spleen_3D = dict(
     repeats=10,
     special_tokens=['[SEG]'],
     extra_image_processor=extra_image_processor,
-    sampled_slices=5,
+    sampled_slices=10,
 )
 BioMSD_Task10_Colon_3D = dict(
     type=ReferSegBiomedDataset3D,
@@ -739,7 +739,7 @@ BioMSD_Task10_Colon_3D = dict(
     repeats=10,
     special_tokens=['[SEG]'],
     extra_image_processor=extra_image_processor,
-    sampled_slices=5,
+    sampled_slices=10,
 )
 
 BioCOVID_CT_3D = dict(
@@ -753,7 +753,7 @@ BioCOVID_CT_3D = dict(
     repeats=10,
     special_tokens=['[SEG]'],
     extra_image_processor=extra_image_processor,
-    sampled_slices=5,
+    sampled_slices=10,
 )
 
 
