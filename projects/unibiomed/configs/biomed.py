@@ -6,7 +6,6 @@ from transformers import AutoTokenizer
 
 from xtuner.dataset import ConcatDataset
 from xtuner.dataset.samplers import LengthGroupedSampler
-from xtuner.engine.hooks import DatasetInfoHook
 from xtuner.engine.runner import TrainLoop
 from xtuner.utils import PROMPT_TEMPLATE
 from xtuner.dataset.map_fns import template_map_fn_factory
