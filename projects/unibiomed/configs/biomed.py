@@ -3,9 +3,12 @@ from mmengine.hooks import (CheckpointHook, DistSamplerSeedHook, IterTimerHook,
 from mmengine.optim import AmpOptimWrapper, CosineAnnealingLR, LinearLR
 from torch.optim import AdamW
 from transformers import AutoTokenizer
-
+import torch
+import random
+import numpy as np
 from xtuner.dataset import ConcatDataset
 from xtuner.dataset.samplers import LengthGroupedSampler
+from xtuner.engine.hooks import DatasetInfoHook
 from xtuner.engine.runner import TrainLoop
 from xtuner.utils import PROMPT_TEMPLATE
 from xtuner.dataset.map_fns import template_map_fn_factory
@@ -24,6 +27,23 @@ from projects.unibiomed.datasets import (ReferSegBiomedDataset, ReferSegBiomedDa
 #######################################################################
 #                          PART 1  Settings                           #
 #######################################################################
+
+def set_seed(seed_value=42):
+    """
+    Set the seed for PyTorch (both CPU and CUDA), Python, and NumPy for reproducible results.
+
+    :param seed_value: An integer value to be used as the seed.
+    """
+    torch.manual_seed(seed_value)
+    if torch.cuda.is_available():
+        torch.cuda.manual_seed(seed_value)
+        torch.cuda.manual_seed_all(seed_value)  # For multi-GPU setups
+    random.seed(seed_value)
+    np.random.seed(seed_value)
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
+
+set_seed()
 # Model
 path = 'OpenGVLab/InternVL2_5-1B'
 sam_cfg_path = "sam2_hiera_l.yaml"
