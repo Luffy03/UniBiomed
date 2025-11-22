@@ -37,7 +37,7 @@ pretrained/
 
 ## Download Datasets
 
-Our curated datasets are available at [Hugging face](https://huggingface.co/Luffy503/UniBiomed). **NOTE THAT** You need to download MedTrinity from https://huggingface.co/datasets/UCSC-VLAA/MedTrinity-25M. The datasets are organized as follows:
+Our curated datasets are available at [Hugging face](https://huggingface.co/Luffy503/UniBiomed). Some of the datasets should be downloaded and processed from the original links. The datasets are organized as follows:
 ```
 ./ # project root
 data/Biomed
@@ -113,6 +113,9 @@ You can use our [trained model](https://huggingface.co/Luffy503/UniBiomed) on hu
 For segmentation (replace '$datasetname'):
 ```bash
 PYTHONPATH=. python demo/demo_seg2D.py --val_folder /data/Biomed/$datasetname --work-dir ./val_results/$datasetname --model_path Luffy503/UniBiomed
+
+# or one for all
+bash demo_seg.sh
 ```
 
 For grounded disease recognition:
@@ -128,6 +131,9 @@ bash demo_disease.sh
 For Region understand:
 ```bash
 PYTHONPATH=. python demo/demo_RegionCap.py --data_path ./data/Biomed/Disease/$datasetname --model_path Luffy503/UniBiomed --save_dir ./val_results/region_understand/$datasetname
+
+# or one for all
+bash demo_RegionCap.sh
 ```
 
 For medtrinity report generation:
@@ -155,10 +161,8 @@ If you find this repo useful for your research, please consider citing the paper
 ```bibtex
 @article{wu2025unibiomed,
   title={UniBiomed: A Universal Foundation Model for Grounded Biomedical Image Interpretation},
-  author={Wu, Linshan and Nie, Yuxiang and He, Sunan and Zhuang, Jiaxin and Luo, Luyang and Mahboobani, Neeraj and Vardhanabhuti, Varut and Chan, Ronald Cheong Kin and Peng, Yifan and Rajpurkar, Pranav and Chen, Hao},
+  author={Wu, Linshan and Nie, Yuxiang and He, Sunan and Zhuang, Jiaxin and Chen, Hao},
   journal={arXiv preprint arXiv:2504.21336},
   year={2025}
 }
 ```
-
-
