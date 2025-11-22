@@ -101,6 +101,12 @@ Run the following command for training (8*H800 GPUs).
 bash tools/dist.sh train projects/unibiomed/configs/biomed.py 8
 ```
 
+For single-GPU, you can simply modify GPU number as 1
+
+```bash
+bash tools/dist.sh train projects/unibiomed/configs/biomed_subset.py 1
+```
+
 ## Evaluation
 
 After training, you need to save hugging face model for evaluation. Replace '$your_model$' as the real model path. The model will be saved to './save_hf'.
@@ -166,4 +172,3 @@ If you find this repo useful for your research, please consider citing the paper
   year={2025}
 }
 ```
-
