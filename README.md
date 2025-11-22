@@ -107,6 +107,8 @@ For single-GPU, you can simply modify GPU number as 1
 bash tools/dist.sh train projects/unibiomed/configs/biomed_subset.py 1
 ```
 
+The seed is set to 42.
+
 ## Evaluation
 
 After training, you need to save hugging face model for evaluation. Replace '$your_model$' as the real model path. The model will be saved to './save_hf'.
