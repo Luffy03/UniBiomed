@@ -1,4 +1,4 @@
-transformers==4.42.3
+transformers==4.44.2
 xtuner[deepspeed]==0.1.23
 timm==1.0.9
 mmdet==3.3.0
