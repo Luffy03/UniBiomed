@@ -169,8 +169,9 @@ If you find this repo useful for your research, please consider citing the paper
 ```bibtex
 @article{wu2025unibiomed,
   title={UniBiomed: A Universal Foundation Model for Grounded Biomedical Image Interpretation},
-  author={Wu, Linshan and Nie, Yuxiang and He, Sunan and Zhuang, Jiaxin and Luo, Luyang and Mahboobani, Neeraj and Vardhanabhuti, Varut and Chan, Ronald Cheong Kin and Peng, Yifan and Rajpurkar, Pranav and others},
+  author={Wu, Linshan and Nie, Yuxiang and He, Sunan and Zhuang, Jiaxin and Luo, Luyang and Mahboobani, Neeraj and Vardhanabhuti, Varut and Chan, Ronald Cheong Kin and Peng, Yifan and Rajpurkar, Pranav and Chen, Hao},
   journal={arXiv preprint arXiv:2504.21336},
   year={2025}
 }
 ```
+
