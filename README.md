@@ -8,6 +8,8 @@
 
 We introduce **UniBiomed**, the first universal foundation model for grounded biomedical image interpretation, which is capable of generating accurate diagnostic findings and simultaneously segmenting the corresponding biomedical targets. UniBiomed is based on a novel integration of Multi-modal Large Language Model (MLLM) and Segment Anything Model (SAM), which can effectively unify diverse biomedical tasks in universal training for advancing grounded interpretation.
 
+Our model is available at [HuggingFace](https://huggingface.co/Luffy503/UniBiomed).
+
 ![teaser](assets/fig1.png)
 
 [//]: # (## News)
@@ -174,4 +176,5 @@ If you find this repo useful for your research, please consider citing the paper
   year={2025}
 }
 ```
+
 
