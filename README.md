@@ -1,5 +1,5 @@
 <div align="center">
-<h1>UniBiomed: A Universal Foundation Model for Grounded Biomedical Image Interpretation</h1>
+<h1>[Nature Communications 2026] UniBiomed: A Universal Foundation Model for Grounded Biomedical Image Interpretation</h1>
 
 <a href="https://arxiv.org/abs/2504.21336"><img src='https://img.shields.io/badge/arXiv-Preprint-red' alt='Paper PDF'></a>
 <a href='https://huggingface.co/Luffy503/UniBiomed'><img src='https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Models-blue'></a>
@@ -176,6 +176,7 @@ If you find this repo useful for your research, please consider citing the paper
   year={2025}
 }
 ```
+
 
 
 
