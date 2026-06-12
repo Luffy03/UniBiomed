@@ -169,11 +169,12 @@ Our work is developed on the great work [Sa2VA](https://github.com/magic-researc
 If you find this repo useful for your research, please consider citing the paper as follows:
 
 ```bibtex
-@article{wu2025unibiomed,
-  title={Unibiomed: A universal foundation model for grounded biomedical image interpretation},
+@article{wu2026unibiomed,
+  title={A universal foundation model for grounded biomedical image interpretation},
   author={Wu, Linshan and Nie, Yuxiang and He, Sunan and Zhuang, Jiaxin and Luo, Luyang and Li, Tao and Xie, Zhuoyao and Chen, Dexuan and Zhao, Yinghua and Mahboobani, Neeraj and others},
-  journal={arXiv preprint arXiv:2504.21336},
-  year={2025}
+  journal={Nature Communications},
+  year={2026},
+  publisher={Nature Publishing Group}
 }
 ```
 
